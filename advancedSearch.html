@@ -2,13 +2,58 @@
 <html>
   <head>
     <title>Search</title>
-    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .links {
+        text-align: right;
+        padding: 20px 10px;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      .links > a {
+        margin: 0px 10px;
+      }
+      h3 {
+        color: lightcoral;
+        padding-bottom: 30px;
+        border-bottom: solid lightgray;
+      }
+      .advancedForm {
+        width: 50%;
+      }
+      form > div {
+        display: flex;
+        flex-direction: row;
+      }
+      form input {
+        height: 20px;
+        width: 100px;
+      }
+    </style>
   </head>
   <body>
-    <a href="index.html">Back</a>
-    <form action="https://google.com/search">
-      <input type="text" name="q" />
-      <input type="submit" value="Google Search" />
-    </form>
+    <div class="links">
+      <a href="index.html">Back</a>
+    </div>
+    <h3>Advanced Search</h3>
+    <p>Find Pages With...</p>
+    <div class="advancedForm">
+      <form action="https://google.com/search">
+        <div>
+          <p>all these words:</p>
+          <input type="text" name="q" />
+        </div>
+        <div>
+          <p>this exact word or phrase:</p>
+          <input type="text" name="q" />
+        </div>
+        <div>
+          <p>any of these words:</p>
+          <input type="text" name="q" />
+        </div>
+        <input type="submit" value="Advanced Search" />
+      </form>
+    </div>
   </body>
 </html>
