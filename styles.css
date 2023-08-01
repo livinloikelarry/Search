@@ -1,0 +1,28 @@
+a {
+  text-decoration: none;
+  color: black;
+}
+.links {
+  text-align: right;
+  padding: 20px 10px;
+}
+.links > a {
+  margin: 0px 10px;
+}
+.logo,
+form {
+  text-align: center;
+}
+.logo {
+  font-size: 70px;
+}
+#searchbar {
+  width: 350px;
+  height: 25px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+div > input {
+  margin: 0px 5px;
+}

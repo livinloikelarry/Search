@@ -2,15 +2,21 @@
 <html lang="en">
   <head>
     <title>Search</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <a href="index.html">Back</a>
+    <div class="links">
+      <a href="index.html">Back</a>
+    </div>
+    <h1 class="logo">Goodle</h1>
     <!-- https://www.google.com/search?q=harvard&tbm=isch&sclient=img -->
     <form action="https://google.com/search">
-      <input type="text" name="q" />
+      <input id="searchbar" type="text" name="q" />
       <input type="hidden" name="tbm" value="isch" />
       <input type="hidden" name="sclient" value="img" />
-      <input type="submit" value="Google Search" />
+      <div>
+        <input type="submit" value="Google Search" />
+      </div>
     </form>
   </body>
 </html>
