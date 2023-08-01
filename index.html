@@ -6,11 +6,25 @@
       a {
         text-decoration: none;
       }
+      .links {
+        text-align: right;
+        padding: 20px 10px;
+      }
+      .links > a {
+        margin: 0px 10px;
+      }
+      .logo,
+      form {
+        text-align: center;
+      }
     </style>
   </head>
   <body>
-    <a href="imageSearch.html">Images</a>
-    <a href="advancedSearch.html">Advanced Search</a>
+    <div class="links">
+      <a href="imageSearch.html">Images</a>
+      <a href="advancedSearch.html">Advanced Search</a>
+    </div>
+    <h1 class="logo">Poodle</h1>
     <form action="https://google.com/search">
       <input type="text" name="q" />
       <input type="submit" value="Google Search" />
