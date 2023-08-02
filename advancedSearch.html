@@ -16,19 +16,39 @@
       }
       h3 {
         color: lightcoral;
-        padding-bottom: 30px;
+        padding: 0px 0px 30px 30px;
         border-bottom: solid lightgray;
       }
       .advancedForm {
-        width: 50%;
+        width: 40%;
+        padding-left: 30px;
       }
       form > div {
         display: flex;
         flex-direction: row;
+        align-items: center;
       }
       form input {
-        height: 20px;
-        width: 100px;
+        height: 16px;
+        width: 80%;
+        margin: 0px 10px;
+      }
+      form p {
+        width: 40%;
+      }
+      #findWith {
+        font-weight: bold;
+      }
+      #searchButton {
+        margin-top: 30px;
+        width: fit-content;
+        height: 30px;
+        background-color: lightskyblue;
+        color: white;
+        border-color: lightskyblue;
+      }
+      .button {
+        float: right;
       }
     </style>
   </head>
@@ -37,8 +57,8 @@
       <a href="index.html">Back</a>
     </div>
     <h3>Advanced Search</h3>
-    <p>Find Pages With...</p>
     <div class="advancedForm">
+      <p id="findWith">Find Pages With...</p>
       <form action="https://google.com/search">
         <div>
           <p>all these words:</p>
@@ -52,7 +72,9 @@
           <p>any of these words:</p>
           <input type="text" name="q" />
         </div>
-        <input type="submit" value="Advanced Search" />
+        <div class="button">
+          <input id="searchButton" type="submit" value="Advanced Search" />
+        </div>
       </form>
     </div>
   </body>
